@@ -1,6 +1,7 @@
 Team Name: uOvirt
 
-Team Member Names: Christopher Alam - Student Number 300522242
+Team Member Names: 
+Christopher Alam - Student Number 300522242
 Ilyes Kadem - Student Number 300552872
 Maimouna Kone - Student Number 300495045
 Temitayo Ajiboye - Student Number 300527364
