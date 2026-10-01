@@ -1,3 +1,6 @@
+uOVirt
+======
+
 Team Name: uOvirt
 
 Team Member Names: 
@@ -10,4 +13,4 @@ Zaina Abukhamis - Student Number 300563496
 Product Name: uOvirt 
 
 Description:
-The Interactive uOttawa campus will be able to show also where the food court, the printers, information rooms and nice places to study and places that you can reserve to study in. 
+Interactive uOttawa Campus Map is a web application that helps students find their way around campus. Along with buildings and classrooms, it shows where to find food courts, printers, and information desks, as well as good places to study, including study rooms you can reserve.
