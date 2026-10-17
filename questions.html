@@ -2,28 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta
-      name="description"
-      content="uOVirt is an interactive uOttawa campus map for finding buildings, classrooms, food courts, printers, information desks, and study rooms."
-    />
-
-    <meta name="theme-color" content="#f4f1ea" />
-
-    <title>uOVirt — Interactive uOttawa Campus Map</title>
+    <title>uOVirt — Questions</title>
   </head>
 
   <body>
-    <h1>uOVirt — Questions</h1>
-<<<<<<< HEAD
-    <img src="mockups/questions.jpg" alt="Questions page mockup" style="max-width: 100%;" />
-=======
-    <img src="Mockups/questions.jpg" alt="Questions page mockup" style="max-width: 100%;" />
->>>>>>> 1ea05ea4b6206c3b6fb7ae8f0b49ec522fe80028
+    <header>
+      <strong>uOVirt</strong>
+      <a href="home.html">← Back home</a>
+    </header>
 
-    <div id="root"></div>
+    <main>
+      <p>CONTACT UOVIRT</p>
+      <h1>Let's get you <em>unlost.</em></h1>
+      <p>Have a question, found an issue, or want to suggest a campus location? Send us a message and we'll get back to you.</p>
+      <p>Email us directly: <a href="mailto:contact@uovirt.ca">contact@uovirt.ca</a></p>
 
-    <script type="module" src="/src/main.tsx"></script>
+      <form action="mailto:contact@uovirt.ca" method="post" enctype="text/plain">
+        <p>
+          <label>Your name</label><br />
+          <input type="text" name="name" placeholder="Jane Doe" />
+        </p>
+
+        <p>
+          <label>Email address</label><br />
+          <input type="email" name="email" placeholder="jane@example.com" />
+        </p>
+
+        <p>
+          <label>What can we help with?</label><br />
+          <textarea name="message" placeholder="Type your question here..."></textarea>
+        </p>
+
+        <button type="submit">Send question →</button>
+      </form>
+    </main>
   </body>
 </html>
