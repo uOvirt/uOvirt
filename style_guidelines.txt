@@ -1,1 +1,45 @@
+Overall Look and Feel of uOVirt
+===============================
 
+The overall look and feel should be clean, modern, and flat. We will avoid 3D buttons, shadows that look heavy, and glossy effects.
+The website should feel friendly and helpful, like a classmate showing you around campus. Our goal is to get students "unlost" quickly and without stress.
+
+Colours
+========
+For uOVirt, our colours are inspired by uOttawa's red and a warm, paper-like background that feels like a campus map.
+These are our colour swatches:
+
+- #C8321E (uOVirt red, for buttons, highlights and accents)
+- #A82815 (dark red, for hover states)
+- #F4F1EA (warm beige, for page backgrounds)
+- #FFFFFF (white, for cards and forms)
+- #1A1A1A (near black, for headings and main text)
+- #777777 (grey, for small notes and labels)
+
+Iconography
+===========
+We will use simple, flat line icons (like a map pin, envelope, and arrows) that match the overall look and feel.
+When selecting an icon, please keep the following in mind:
+
+- Pick the icon that clearly matches its job (a map pin for locations, an envelope for email)
+- Keep icons the same style and thickness across all pages
+- Use red or black icons only, so they match our colours
+
+Typography
+==========
+We will be using fonts from Google Fonts:
+
+- Headings: Inter Tight (bold and tight, for big titles)
+- Accent words: Fraunces Italic (for a highlighted word in a title, like "unlost.")
+- Body text: DM Sans (for paragraphs, labels and buttons)
+
+Links
+=====
+Links will not be underlined and will be bold black text that turns red when a user hovers over it.
+The only exception is email links, which have a red underline so they stand out.
+
+Buttons
+=======
+Buttons will be flat and rounded (pill-shaped), with a red background (#C8321E) and white bold text.
+When the user hovers over a button, it turns dark red (#A82815).
+Buttons can include a small arrow (→) to show the user they are moving forward.
