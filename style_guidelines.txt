@@ -2,7 +2,7 @@ Overall Look and Feel of uOVirt
 ===============================
 
 The overall look and feel should be clean, modern, and flat. We will avoid 3D buttons, shadows that look heavy, and glossy effects.
-The website should feel friendly and helpful, like a classmate showing you around campus. Our goal is to get students "unlost" quickly and without
+The website should feel friendly and helpful, like a classmate showing you around campus. Our goal is to get students "unlost" quickly and without stress.
 
 Colours
 ========
