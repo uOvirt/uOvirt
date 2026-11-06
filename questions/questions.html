@@ -2,39 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>uOVirt — Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <strong>uOVirt</strong>
-      <a href="../home.html">← Back home</a>
+    <header class="site-header">
+      <a class="brand" href="../home.html">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z" />
+            <circle cx="12" cy="11" r="2.2" />
+          </svg>
+        </span>
+        <strong class="brand-name">uO<span>Virt</span></strong>
+      </a>
+      <a class="back-link" href="../home.html">
+        <span aria-hidden="true">←</span> Back home
+      </a>
     </header>
 
-    <main>
-      <p>CONTACT UOVIRT</p>
-      <h1>Let's get you <em>unlost.</em></h1>
-      <p>Have a question, found an issue, or want to suggest a campus location? Send us a message and we'll get back to you.</p>
-      <p>Email us directly: <a href="mailto:contact@uovirt.ca">contact@uovirt.ca</a></p>
-
-      <form action="mailto:contact@uovirt.ca" method="post" enctype="text/plain">
-        <p>
-          <label>Your name</label><br />
-          <input type="text" name="name" placeholder="Jane Doe" />
+    <main class="contact">
+      <section class="contact-intro">
+        <p class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+          Contact uOVirt
         </p>
 
-        <p>
-          <label>Email address</label><br />
-          <input type="email" name="email" placeholder="jane@example.com" />
+        <h1>Let’s get you <em>unlost.</em></h1>
+
+        <p class="lead">
+          Have a question, found an issue, or want to suggest a campus location?
+          Send us a message and we’ll get back to you.
         </p>
 
-        <p>
-          <label>What can we help with?</label><br />
-          <textarea name="message" placeholder="Type your question here..."></textarea>
-        </p>
+        <div class="direct-email">
+          <span class="direct-label">Email us directly</span>
+          <a href="mailto:contact@uovirt.ca">contact@uovirt.ca</a>
+        </div>
+      </section>
 
-        <button type="submit">Send question →</button>
+      <form id="contact-form" class="contact-card" action="mailto:contact@uovirt.ca" method="post" enctype="text/plain" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">What can we help with?</label>
+          <textarea id="message" name="message" placeholder="Type your question here..." required></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="send-btn">
+          Send question <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="form-note" id="form-note">
+          This will open your email app with your message ready to send.
+        </p>
       </form>
     </main>
 
