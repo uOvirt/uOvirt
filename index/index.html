@@ -1,16 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uOVirt - Home</title>
+
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
 </head>
+
 <body>
- <header>
-        <h2>📍 uOVirt</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="team.html">Team</a>
+
+    <!-- Navigation bar -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⌖</span>
+            <span>uO<span class="red-text">Virt</span></span>
+        </a>
+
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="../features.html">Features</a>
+            <a href="../pricing.html">Pricing</a>
+            <a href="../team.html">Team</a>
+            <a href="#questions">Questions</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <div class="header-search">
+            <span>⌕</span>
+            <input type="search"
+                   id="headerSearch"
+                   placeholder="Search for a building..."
+                   aria-label="Search for a building">
+        </div>
     </header>
+
+    <main>
+
+        <!-- Main homepage content -->
+        <div class="home-layout">
+
+            <section class="intro">
+                <h1>
+                    Campus<br>
+                    made <em>simple.</em>
+                </h1>
+
+                <p>
+                    Explore uOttawa with uOVirt.
+                    Find buildings, services and important
+                    locations easily with our interactive
+                    campus map.
+                </p>
+
+                <a href="#campus-map" class="main-button">
+                    Start exploring <span>→</span>
+                </a>
+            </section>
+
+            <!-- Tabaret Hall -->
+            <section class="building-photo">
+                <img src="images/tabaret.jpg"
+                     alt="Tabaret Hall at the University of Ottawa">
+
+                <div class="photo-pin">📍</div>
+
+                <div class="building-label">
+                    <div>
+                        <h3>Tabaret Hall</h3>
+                        <p>Academic Building</p>
+                    </div>
+                    <span>›</span>
+                </div>
+            </section>
+
+            <!-- Campus map preview -->
+            <aside class="campus-map" id="campus-map">
+
+                <div class="map-search">
+                    <span>⌕</span>
+                    <input type="search"
+                           id="mapSearch"
+                           placeholder="Search for a building..."
+                           aria-label="Search campus buildings">
+                </div>
+
+                <div class="map-background">
+                    <div class="map-block block-one"></div>
+                    <div class="map-block block-two"></div>
+                    <div class="map-block block-three"></div>
+                    <div class="map-block block-four"></div>
+
+                    <svg class="map-route"
+                         viewBox="0 0 300 450"
+                         preserveAspectRatio="none"
+                         aria-label="Example campus route">
+                        <polyline
+                            points="200,110 140,170 195,240 135,310 100,365"
+                            fill="none"
+                            stroke="#ba000c"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </polyline>
+
+                        <circle cx="100" cy="365" r="12"
+                                fill="white"
+                                stroke="#ba000c"
+                                stroke-width="4">
+                        </circle>
+
+                        <circle cx="100" cy="365" r="5"
+                                fill="#ba000c">
+                        </circle>
+                    </svg>
+
+                    <div class="destination-pin">📍</div>
+                </div>
+
+                <div class="destination-card">
+                    <div>
+                        <h3 id="destinationName">
+                            Minto Sports Complex
+                        </h3>
+                        <p id="destinationInfo">
+                            Example campus destination
+                        </p>
+                    </div>
+                    <span>›</span>
+                </div>
+
+                <div id="searchResults"
+                     class="search-results"
+                     aria-live="polite"></div>
+            </aside>
+
+            <!-- Homepage feature cards -->
+            <section class="feature-cards" id="features">
+
+                <article class="feature-card">
+                    <div class="feature-icon">▱</div>
+                    <h2>Interactive Map</h2>
+                    <p>
+                        Find buildings, services and
+                        study spaces in seconds.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">➤</div>
+                    <h2>Easy Navigation</h2>
+                    <p>
+                        Get turn-by-turn directions
+                        around campus effortlessly.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">♡</div>
+                    <h2>Everything in One Place</h2>
+                    <p>
+                        Access important locations,
+                        services and resources.
+                    </p>
+                </article>
+
+            </section>
+        </div>
+
+        <!-- Bottom homepage banner -->
+        <section class="bottom-banner">
+            <div>
+                <h2>
+                    Never get <em>unlost</em><br>
+                    on campus again.
+                </h2>
+
+                <p>
+                    Whether you're a new student or just exploring,
+                    uOVirt makes it easy to find your way around uOttawa.
+                </p>
+            </div>
+
+            <a href="../features.html" class="learn-button">
+                Learn more <span>→</span>
+            </a>
+        </section>
+
+        <!-- Questions -->
+        <section class="extra-section" id="questions">
+            <h2>Questions?</h2>
+
+            <details>
+                <summary>What is uOVirt?</summary>
+                <p>
+                    uOVirt is a student project designed to help
+                    people explore the University of Ottawa campus.
+                </p>
+            </details>
+
+            <details>
+                <summary>Who can use uOVirt?</summary>
+                <p>
+                    The website is designed for students,
+                    visitors and anyone exploring campus.
+                </p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>uOVirt | SEG 2900 Student Project</p>
+        <p>University of Ottawa · 2026</p>
+    </footer>
+
+</body>
+</html>
