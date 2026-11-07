@@ -53,6 +53,9 @@
     border: 1px solid #dddddd;
     border-radius: 20px;
     flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-page .student {
@@ -87,7 +90,7 @@
     color: #cc0000;
     border: 2px solid #cc0000;
     border-radius: 25px;
-    paDDIng: 12px 25px;
+    padding: 12px 25px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -97,14 +100,33 @@
     color: white;
 }
 
+.pricing-page .plan button {
+    margin-top: auto;
+}
+
 .pricing-page .student button {
     background-color: #cc0000;
     color: white;
 }
 
-.pricing-page .selected {
+.pricing-page .plan.selected {
     border: 3px solid #cc0000;
     background-color: #fff5f5;
+}
+
+.pricing-page .plan.selected button {
+    background-color: #cc0000;
+    color: white;
+}
+
+.pricing-page .plan:not(.selected):not(.student) button {
+    background-color: white;
+    color: #cc0000;
+}
+
+.pricing-page .plan:not(.selected):not(.student) button:hover {
+    background-color: #cc0000;
+    color: white;
 }
 
 .pricing-page .bottom {
@@ -125,6 +147,14 @@
     }
 
     .pricing-page main {
+        padding: 20px;
+    }
+
+    .pricing-page h1 {
+        font-size: 36px;
+    }
+
+    .pricing-page header {
         padding: 20px;
     }
 }
