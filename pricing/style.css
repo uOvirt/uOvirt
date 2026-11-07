@@ -1,1 +1,130 @@
 
+.pricing-page {
+    font-family: Arial, sans-serif;
+    background-color: #faf8f5;
+    color: black;
+    margin: 0;
+}
+
+.pricing-page header {
+    background-color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-page header strong {
+    color: #cc0000;
+    font-size: 28px;
+}
+
+.pricing-page header a {
+    color: black;
+    text-decoration: none;
+}
+
+.pricing-page main {
+    padding: 40px 50px;
+}
+
+.pricing-page h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.pricing-page h1 em {
+    color: #cc0000;
+}
+
+.pricing-page p {
+    color: #444;
+}
+
+.pricing-page .plans {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.pricing-page .plan {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.pricing-page .student {
+    border: 2px solid #cc0000;
+}
+
+.pricing-page .plan h2 {
+    font-size: 28px;
+}
+
+.pricing-page .plan h3 {
+    font-size: 36px;
+}
+
+.pricing-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-page li {
+    margin-bottom: 15px;
+}
+
+.pricing-page li::before {
+    content: "✓ ";
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.pricing-page button {
+    background-color: white;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+    border-radius: 25px;
+    paDDIng: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pricing-page button:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+.pricing-page .student button {
+    background-color: #cc0000;
+    color: white;
+}
+
+.pricing-page .selected {
+    border: 3px solid #cc0000;
+    background-color: #fff5f5;
+}
+
+.pricing-page .bottom {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.pricing-page #message {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .pricing-page .plans {
+        flex-direction: column;
+    }
+
+    .pricing-page main {
+        padding: 20px;
+    }
+}
