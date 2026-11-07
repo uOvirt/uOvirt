@@ -1,1 +1,50 @@
+body {
+    background-color: #F4F1EA;
+    font-family: Arial, sans-serif;
+    color: #1A1A1A;
+    margin: 40px;
+}
 
+body > h3:first-of-type {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+body > h6 {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #777777;
+    cursor: pointer;
+}
+
+body > h6:hover, 
+body > h6.active {
+    color: #C8321E;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #E2DDD5;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #1A1A1A;
+}
+
+p {
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.5;
+}
+
+body > h3:last-of-type {
+    font-size: 28px;
+    margin-top: 40px;
+}
