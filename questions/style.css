@@ -1,89 +1,9 @@
-/* ---------- Theme ---------- */
+/* Questions / contact page styles
+   Colours, fonts, header, buttons and footer come from ../shared.css */
+
 :root {
-  --bg: #f0eee7;
-  --card: #ffffff;
-  --input-bg: #f6f5f0;
-  --border: #d6d3cb;
-  --text: #161616;
-  --muted: #5c5a55;
-  --faint: #8a8781;
-  --red: #c8321e;
-  --red-dark: #a82814;
   --radius-card: 28px;
   --radius-input: 12px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "DM Sans", system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* ---------- Header ---------- */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 96px;
-  border-bottom: 1px solid var(--border);
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.brand-icon {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--red);
-  color: #fff;
-}
-
-.brand-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.brand-name {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.brand-name span {
-  color: var(--red);
-}
-
-.back-link {
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-
-.back-link span {
-  margin-right: 8px;
-}
-
-.back-link:hover {
-  color: var(--red);
 }
 
 /* ---------- Layout ---------- */
@@ -92,8 +12,8 @@ a {
   grid-template-columns: 1fr 1.5fr;
   gap: 120px;
   align-items: start;
-  max-width: 1800px;
-  padding: 128px 96px 96px;
+  padding-top: 72px;
+  padding-bottom: 96px;
 }
 
 /* ---------- Left side ---------- */
@@ -116,28 +36,12 @@ a {
   color: var(--red);
 }
 
-h1 {
-  margin: 40px 0 48px;
-  font-size: clamp(3.5rem, 6vw, 6rem);
-  font-weight: 800;
-  line-height: 0.95;
-  letter-spacing: -0.065em;
+.contact .display {
+  margin: 36px 0 40px;
 }
 
-h1 em {
+.contact .display em {
   display: block;
-  font-family: "Fraunces", Georgia, serif;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  color: var(--red);
-}
-
-.lead {
-  max-width: 600px;
-  font-size: 1.5rem;
-  line-height: 1.65;
-  color: var(--muted);
 }
 
 .direct-email {
@@ -154,7 +58,7 @@ h1 em {
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--faint);
+  color: var(--grey);
 }
 
 .direct-email a {
@@ -190,14 +94,14 @@ h1 em {
   margin-bottom: 28px;
 }
 
-label {
+.contact-card label {
   margin-bottom: 14px;
   font-size: 1.15rem;
   font-weight: 700;
 }
 
-input,
-textarea {
+.contact-card input,
+.contact-card textarea {
   width: 100%;
   padding: 20px 22px;
   background: var(--input-bg);
@@ -209,18 +113,18 @@ textarea {
   transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-input::placeholder,
-textarea::placeholder {
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
   color: #9a978f;
 }
 
-textarea {
+.contact-card textarea {
   min-height: 235px;
   resize: vertical;
 }
 
-input:focus,
-textarea:focus {
+.contact-card input:focus,
+.contact-card textarea:focus {
   outline: none;
   background: #fff;
   border-color: var(--red);
@@ -291,23 +195,11 @@ textarea:focus {
   .contact {
     grid-template-columns: 1fr;
     gap: 64px;
-    padding: 72px 48px;
-  }
-
-  .site-header {
-    padding: 24px 48px;
+    padding-top: 48px;
   }
 }
 
 @media (max-width: 640px) {
-  .site-header {
-    padding: 20px;
-  }
-
-  .contact {
-    padding: 48px 20px;
-  }
-
   .contact-card {
     padding: 28px 22px;
   }
@@ -317,7 +209,4 @@ textarea:focus {
     gap: 0;
   }
 
-  .lead {
-    font-size: 1.2rem;
-  }
 }
