@@ -4,32 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>uOVirt — Questions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../shared.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Navigation bar (same on every page) -->
     <header class="site-header">
-      <a class="brand" href="../index/index.html">
+      <a class="brand" href="../index/index.html" aria-label="uOVirt home">
         <span class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z" />
-            <circle cx="12" cy="11" r="2.2" />
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z" /><circle cx="12" cy="11" r="2.2" /></svg>
         </span>
-        <strong class="brand-name">uO<span>Virt</span></strong>
+        <span class="brand-name">uO<span>Virt</span></span>
       </a>
-      <a class="back-link" href="../index/index.html">
-        <span aria-hidden="true">←</span> Back home
-      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <a href="../index/index.html">Home</a>
+        <a href="../features/features.html">Features</a>
+        <a href="../pricing/pricing.html">Pricing</a>
+        <a href="../team/team.html">Team</a>
+        <a href="../questions/questions.html" class="active" aria-current="page">Questions</a>
+      </nav>
+
+      <form class="site-search" action="../index/index.html" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
+        <input type="search" name="q" placeholder="Search for a building..." aria-label="Search for a building" />
+      </form>
     </header>
 
-    <main class="contact">
+    <main class="contact page">
       <section class="contact-intro">
         <p class="badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -39,7 +42,7 @@
           Contact uOVirt
         </p>
 
-        <h1>Let’s get you <em>unlost.</em></h1>
+        <h1 class="display">Let’s get you <em>unlost.</em></h1>
 
         <p class="lead">
           Have a question, found an issue, or want to suggest a campus location?
@@ -82,6 +85,10 @@
         </p>
       </form>
     </main>
+
+    <footer class="site-footer">
+      uOVirt · SEG 2900 Student Project · University of Ottawa · 2026
+    </footer>
 
     <script src="script.js"></script>
   </body>
