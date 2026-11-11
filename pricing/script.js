@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (!document.body.classList.countains("pricing-page")) {
+    if (!document.body.classList.contains("pricing-page")) {
         return;
     }
 
@@ -13,14 +13,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
             for (let j = 0; j < plans.length; j++) {
                 plans[j].classList.remove("selected");
+                buttons[j].setAttribute("aria-pressed", "false");
             }
 
             plans[i].classList.add("selected");
+            buttons[i].setAttribute("aria-pressed", "true");
 
             let planName = plans[i].querySelector("h2").textContent;
 
             message.textContent = "You selected the " + planName + " plan!";
         });
+
+        buttons[i].setAttribute("aria-pressed", "false");
     }
 
     let learnMore = document.getElementById("learnMore");
