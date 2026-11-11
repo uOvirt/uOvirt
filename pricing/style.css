@@ -1,13 +1,13 @@
 
 .pricing-page {
-    font-family: Arial, sans-serif;
-    background-color: #faf8f5;
-    color: black;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F4F1EA;
+    color: #1A1A1A;
     margin: 0;
 }
 
 .pricing-page header {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 25px 50px;
     display: flex;
     justify-content: space-between;
@@ -15,17 +15,36 @@
 }
 
 .pricing-page header strong {
-    color: #cc0000;
+    font-family: 'Inter Tight', sans-serif;
     font-size: 28px;
+    color: #C8321E;
 }
 
-.pricing-page header a {
-    color: black;
+.pricing-page a {
+    color: #1A1A1A;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.pricing-page a:hover {
+    color: #C8321E;
 }
 
 .pricing-page main {
-    padding: 40px 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pricing-page .label {
+    color: #C8321E;
+    font-weight: bold;
+}
+
+.pricing-page h1,
+.pricing-page h2,
+.pricing-page h3 {
+    font-family: 'Inter Tight', sans-serif;
 }
 
 .pricing-page h1 {
@@ -34,11 +53,13 @@
 }
 
 .pricing-page h1 em {
-    color: #cc0000;
+    font-family: 'Fraunces', serif;
+    font-weight: normal;
+    color: #C8321E;
 }
 
 .pricing-page p {
-    color: #444;
+    color: #777777;
 }
 
 .pricing-page .plans {
@@ -48,10 +69,10 @@
 }
 
 .pricing-page .plan {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 30px;
     border: 1px solid #dddddd;
-    border-radius: 20px;
+    border-radius: 18px;
     flex: 1;
     min-width: 0;
     display: flex;
@@ -59,15 +80,22 @@
 }
 
 .pricing-page .student {
-    border: 2px solid #cc0000;
+    border: 2px solid #C8321E;
 }
 
 .pricing-page .plan h2 {
     font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .pricing-page .plan h3 {
     font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing-page .popular {
+    color: #C8321E;
+    font-weight: bold;
 }
 
 .pricing-page ul {
@@ -81,63 +109,48 @@
 
 .pricing-page li::before {
     content: "✓ ";
-    color: #cc0000;
+    color: #C8321E;
     font-weight: bold;
 }
 
 .pricing-page button {
-    background-color: white;
-    color: #cc0000;
-    border: 2px solid #cc0000;
-    border-radius: 25px;
-    padding: 12px 25px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #C8321E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 25px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .pricing-page button:hover {
-    background-color: #cc0000;
-    color: white;
+    background-color: #A82815;
 }
 
 .pricing-page .plan button {
     margin-top: auto;
 }
 
-.pricing-page .student button {
-    background-color: #cc0000;
-    color: white;
-}
-
 .pricing-page .plan.selected {
-    border: 3px solid #cc0000;
-    background-color: #fff5f5;
+    border: 2px solid #C8321E;
+    background-color: #FFF8F5;
 }
 
 .pricing-page .plan.selected button {
-    background-color: #cc0000;
-    color: white;
-}
-
-.pricing-page .plan:not(.selected):not(.student) button {
-    background-color: white;
-    color: #cc0000;
-}
-
-.pricing-page .plan:not(.selected):not(.student) button:hover {
-    background-color: #cc0000;
-    color: white;
+    background-color: #A82815;
 }
 
 .pricing-page .bottom {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 30px;
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 .pricing-page #message {
-    color: #cc0000;
+    color: #C8321E;
     font-weight: bold;
 }
 
