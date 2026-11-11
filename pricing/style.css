@@ -17,6 +17,13 @@
 .pricing-page header strong {
     font-family: 'Inter Tight', sans-serif;
     font-size: 28px;
+}
+
+.pricing-page .logo-black {
+    color: #1A1A1A;
+}
+
+.pricing-page .logo-red {
     color: #C8321E;
 }
 
@@ -131,6 +138,7 @@
 
 .pricing-page .plan button {
     margin-top: auto;
+    width: 100%;
 }
 
 .pricing-page .plan.selected {
@@ -152,6 +160,10 @@
 .pricing-page #message {
     color: #C8321E;
     font-weight: bold;
+}
+
+.pricing-page #message:empty {
+    display: none;
 }
 
 @media (max-width: 750px) {
