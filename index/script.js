@@ -29,18 +29,18 @@ function searchBuildings(searchText) {
     if (matches.length === 0) {
         const message = document.createElement("p");
         message.textContent = "No buildings found.";
-        message.style.padding = "12px";
         searchResults.appendChild(message);
         return;
     }
 
     matches.forEach(function(building) {
         const button = document.createElement("button");
+        button.type = "button";
         button.textContent = building;
 
         button.addEventListener("click", function() {
             destinationName.textContent = building;
-            destinationInfo.textContent = "Selected campus building";
+            destinationInfo.textContent = "Selected building · Map preview";
 
             headerSearch.value = building;
             mapSearch.value = building;
@@ -52,10 +52,27 @@ function searchBuildings(searchText) {
 }
 
 headerSearch.addEventListener("input", function() {
+    mapSearch.value = headerSearch.value;
     searchBuildings(headerSearch.value);
 });
 
 mapSearch.addEventListener("input", function() {
+    headerSearch.value = mapSearch.value;
     searchBuildings(mapSearch.value);
 });
 
+headerSearch.form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    mapSearch.value = headerSearch.value;
+    searchBuildings(headerSearch.value);
+    document.getElementById("campus-map").scrollIntoView();
+});
+
+const startingSearch = new URLSearchParams(window.location.search).get("q");
+
+if (startingSearch) {
+    headerSearch.value = startingSearch;
+    mapSearch.value = startingSearch;
+    searchBuildings(startingSearch);
+    document.getElementById("campus-map").scrollIntoView();
+}
