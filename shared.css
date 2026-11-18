@@ -419,3 +419,64 @@ textarea {
     font-size: 1.15rem;
   }
 }
+
+/* ---------- "Up next" button at the bottom of every page ---------- */
+.next-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 0 48px;
+  padding: 28px 40px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.next-page:hover {
+  color: inherit;
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+
+.next-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--red);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.next-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.next-arrow {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-size: 1.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.next-page:hover .next-arrow {
+  background: var(--red-dark);
+  transform: translateX(4px);
+}
+
+@media (max-width: 700px) {
+  .next-page {
+    padding: 22px 24px;
+  }
+}
