@@ -1,7 +1,8 @@
 Overall Look and Feel of uOVirt
 ===============================
 
-The overall look and feel should be clean, modern, and flat. We will avoid 3D buttons, shadows that look heavy, and glossy effects.
+The overall look and feel should be clean, simple, and flat. We will avoid 3D buttons, shadows, and glossy effects.
+Each page uses white rounded cards on a warm beige background, with a short title and a red button at the bottom to go to the next page.
 The website should feel friendly and helpful, like a classmate showing you around campus. Our goal is to get students "unlost" quickly and without stress.
 
 Colours
@@ -9,37 +10,37 @@ Colours
 For uOVirt, our colours are inspired by uOttawa's red and a warm, paper-like background that feels like a campus map.
 These are our colour swatches:
 
-- #C8321E (uOVirt red, for buttons, highlights and accents)
-- #A82815 (dark red, for hover states)
+- #C8321E (uOVirt red, for buttons, highlights, the active menu link and accent words)
 - #F4F1EA (warm beige, for page backgrounds)
-- #FFFFFF (white, for cards and forms)
+- #FFFFFF (white, for the top bar, cards and forms)
 - #1A1A1A (near black, for headings and main text)
-- #777777 (grey, for small notes and labels)
+- #777777 (grey, for the footer and small notes)
 
 Iconography
 ===========
-We will use simple, flat line icons (like a map pin, envelope, and arrows) that match the overall look and feel.
+We will use simple, flat icons (like a map, a magnifying glass, an envelope, LinkedIn and GitHub) that match the overall look and feel.
 When selecting an icon, please keep the following in mind:
 
-- Pick the icon that clearly matches its job (a map pin for locations, an envelope for email)
-- Keep icons the same style and thickness across all pages
-- Use red or black icons only, so they match our colours
+- Pick the icon that clearly matches its job (a map for the campus map, an envelope for email)
+- Keep icons the same size and style on the same page
+- Use red icons only, so they match our colours
+- If a team member has no photo yet, show the grey person icon instead
 
 Typography
 ==========
-We will be using fonts from Google Fonts:
+We will be using one font from Google Fonts:
 
-- Headings: Inter Tight (bold and tight, for big titles)
-- Accent words: Fraunces Italic (for a highlighted word in a title, like "unlost.")
-- Body text: DM Sans (for paragraphs, labels and buttons)
+- DM Sans, for all text (titles, paragraphs, labels and buttons)
+- Titles are bold
+- One word in a title can be highlighted in red italics, like "unlost."
 
 Links
 =====
-Links will not be underlined and will be bold black text that turns red when a user hovers over it.
-The only exception is email links, which have a red underline so they stand out.
+Links will not be underlined.
+Menu links are black and turn red when the user hovers over them. The link for the page you are on stays red.
 
 Buttons
 =======
-Buttons will be flat and rounded (pill-shaped), with a red background (#C8321E) and white bold text.
-When the user hovers over a button, it turns dark red (#A82815).
+Buttons will be flat and rounded (pill-shaped), with a red background (#C8321E) and white text.
+Every page has a button at the bottom that takes the user to the next page (Home → Features → Pricing → Team → Questions → Home).
 Buttons can include a small arrow (→) to show the user they are moving forward.
