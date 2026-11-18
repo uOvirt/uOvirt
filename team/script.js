@@ -1,15 +1,12 @@
-document.querySelector(".nav-toggle").onclick = () => {
-  document.getElementById("nav").classList.toggle("open");
-};
+var photos = document.querySelectorAll(".photo");
 
-// Recherche : affiche ce que la personne a tapé
-document.querySelector(".search").onsubmit = (e) => {
-  e.preventDefault();
-  alert("Recherche : " + document.getElementById("search").value);
-};
+photos.forEach(function(photo) {
+    photo.addEventListener("error", function() {
+        photo.src = "images/person.svg";
+    });
 
-// Bouton « Join our journey »
-document.getElementById("join").onclick = (e) => {
-  e.preventDefault();
-  alert("Merci !");
-
+    // The photo may have already failed before this script ran
+    if (photo.complete && photo.naturalWidth === 0) {
+        photo.src = "images/person.svg";
+    }
+});
