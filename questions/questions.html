@@ -1,95 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>uOVirt — Questions</title>
-    <link rel="stylesheet" href="../shared.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uOVirt - Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-  <body>
-    <!-- Navigation bar (same on every page) -->
-    <header class="site-header">
-      <a class="brand" href="../index/index.html" aria-label="uOVirt home">
-        <span class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z" /><circle cx="12" cy="11" r="2.2" /></svg>
-        </span>
-        <span class="brand-name">uO<span>Virt</span></span>
-      </a>
-
-      <nav class="site-nav" aria-label="Main">
-        <a href="../index/index.html">Home</a>
-        <a href="../features/features.html">Features</a>
-        <a href="../pricing/pricing.html">Pricing</a>
-        <a href="../team/team.html">Team</a>
-        <a href="../questions/questions.html" class="active" aria-current="page">Questions</a>
-      </nav>
-
-      <form class="site-search" action="../index/index.html" role="search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
-        <input type="search" name="q" placeholder="Search for a building..." aria-label="Search for a building" />
-      </form>
+    <header>
+        <a class="logo" href="../index/index.html">uO<span>Virt</span></a>
+        <nav>
+            <a href="../index/index.html">Home</a>
+            <a href="../features/features.html">Features</a>
+            <a href="../pricing/pricing.html">Pricing</a>
+            <a href="../team/team.html">Team</a>
+            <a href="../questions/questions.html" class="active">Questions</a>
+        </nav>
     </header>
 
-    <main class="contact page">
-      <section class="contact-intro">
-        <p class="badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="m3 7 9 6 9-6" />
-          </svg>
-          Contact uOVirt
-        </p>
+    <main>
+        <h1>Let’s get you <em>unlost.</em></h1>
 
-        <h1 class="display">Let’s get you <em>unlost.</em></h1>
+        <details>
+            <summary>What is uOVirt?</summary>
+            <p>uOVirt is an interactive map of the University of Ottawa campus made by students, for students.</p>
+        </details>
 
-        <p class="lead">
-          Have a question, found an issue, or want to suggest a campus location?
-          Send us a message and we’ll get back to you.
-        </p>
+        <details>
+            <summary>Who can use uOVirt?</summary>
+            <p>Anyone! It is made for students, but visitors and staff can use it too.</p>
+        </details>
 
-        <div class="direct-email">
-          <span class="direct-label">Email us directly</span>
-          <a href="mailto:contact@uovirt.ca">contact@uovirt.ca</a>
-        </div>
-      </section>
+        <details>
+            <summary>Can I reserve a study room?</summary>
+            <p>Yes. With the Student or Pro plan you can see and book study rooms on campus.</p>
+        </details>
 
-      <form id="contact-form" class="contact-card" action="mailto:contact@uovirt.ca" method="post" enctype="text/plain" novalidate>
-        <div class="field-row">
-          <div class="field">
+        <form id="contact-form">
+            <h2>Send us a message</h2>
+
             <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
-            <small class="error" aria-live="polite"></small>
-          </div>
+            <input type="text" id="name" placeholder="Jane Doe" required>
 
-          <div class="field">
             <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
-            <small class="error" aria-live="polite"></small>
-          </div>
-        </div>
+            <input type="email" id="email" placeholder="jane@example.com" required>
 
-        <div class="field">
-          <label for="message">What can we help with?</label>
-          <textarea id="message" name="message" placeholder="Type your question here..." required></textarea>
-          <small class="error" aria-live="polite"></small>
-        </div>
+            <label for="message">What can we help with?</label>
+            <textarea id="message" placeholder="Type your question here..." required></textarea>
 
-        <button type="submit" class="send-btn">
-          Send question <span aria-hidden="true">→</span>
-        </button>
+            <button type="submit">Send question →</button>
+            <p id="note">This will open your email app with your message ready to send.</p>
+        </form>
 
-        <p class="form-note" id="form-note">
-          This will open your email app with your message ready to send.
-        </p>
-      </form>
+        <a class="next" href="../index/index.html">Back home →</a>
     </main>
 
-    <footer class="site-footer">
-      uOVirt · SEG 2900 Student Project · University of Ottawa · 2026
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+    <footer>uOVirt · SEG 2900 Student Project · University of Ottawa · 2026</footer>
+</body>
 </html>
