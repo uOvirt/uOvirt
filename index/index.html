@@ -4,246 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uOVirt - Home</title>
-    <link rel="stylesheet" href="../shared.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- Navigation bar -->
-    <header class="site-header">
-        <a class="brand" href="../index/index.html" aria-label="uOVirt home">
-            <span class="brand-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/>
-                    <circle cx="12" cy="11" r="2.2"/>
-                </svg>
-            </span>
-            <span class="brand-name">uO<span>Virt</span></span>
-        </a>
-
-        <nav class="site-nav" aria-label="Main">
-            <a href="../index/index.html" class="active" aria-current="page">Home</a>
+    <header>
+        <a class="logo" href="../index/index.html">uO<span>Virt</span></a>
+        <nav>
+            <a href="../index/index.html" class="active">Home</a>
             <a href="../features/features.html">Features</a>
             <a href="../pricing/pricing.html">Pricing</a>
             <a href="../team/team.html">Team</a>
             <a href="../questions/questions.html">Questions</a>
         </nav>
-
-        <form class="site-search" action="../index/index.html" role="search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="7"/>
-                <path d="m20 20-4-4"/>
-            </svg>
-            <input type="search"
-                   id="headerSearch"
-                   name="q"
-                   placeholder="Search for a building..."
-                   aria-label="Search for a building">
-        </form>
     </header>
 
-    <main class="page">
+    <section class="hero">
+        <p class="greeting" id="greeting">Welcome!</p>
+        <h1>Campus made <em>simple.</em></h1>
+        <p>Find buildings, food, printers and study spaces at uOttawa. Quick and easy.</p>
+        <a class="next" href="../features/features.html">Browse features →</a>
+    </section>
 
-        <!-- Main homepage content -->
-        <div class="home-layout">
-
-            <section class="intro">
-                <h1 class="display">
-                    Campus<br>
-                    made <em>simple.</em>
-                </h1>
-
-                <p class="lead">
-                    Explore uOttawa with uOVirt.
-                    Find buildings, services and important
-                    locations easily with our interactive
-                    campus map.
-                </p>
-
-                <a href="#campus-map" class="btn">
-                    Start exploring <span>→</span>
-                </a>
-            </section>
-
-            <!-- Tabaret Hall -->
-            <section class="building-photo">
-                <img src="images/tabaret.jpg"
-                     alt="Tabaret Hall at the University of Ottawa">
-
-                <div class="photo-label">
-                    <div>
-                        <strong>Tabaret Hall</strong>
-                        <small>Academic Building</small>
-                    </div>
-                    <span>›</span>
-                </div>
-            </section>
-
-            <!-- Campus map preview -->
-            <aside class="campus-map" id="campus-map" aria-label="Campus map preview">
-
-                <div class="map-search">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-                        <circle cx="11" cy="11" r="7"/>
-                        <path d="m20 20-4-4"/>
-                    </svg>
-
-                    <input type="search"
-                           id="mapSearch"
-                           placeholder="Search for a building..."
-                           aria-label="Search campus buildings">
-                </div>
-
-                <div class="map-background">
-                    <div class="map-block block-one"></div>
-                    <div class="map-block block-two"></div>
-                    <div class="map-block block-three"></div>
-                    <div class="map-block block-four"></div>
-
-                    <svg class="map-route"
-                         viewBox="0 0 300 450"
-                         preserveAspectRatio="none"
-                         aria-label="Example campus route">
-
-                        <polyline
-                            points="200,110 140,170 195,240 135,310 100,365"
-                            fill="none"
-                            stroke="#c8321e"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round">
-                        </polyline>
-
-                        <circle cx="100" cy="365" r="12"
-                                fill="white"
-                                stroke="#c8321e"
-                                stroke-width="4">
-                        </circle>
-
-                        <circle cx="100" cy="365" r="5"
-                                fill="#c8321e">
-                        </circle>
-
-                    </svg>
-
-                    <svg class="destination-pin" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z" fill="#c8321e"/>
-                        <circle cx="12" cy="10" r="2.6" fill="#fff"/>
-                    </svg>
-                </div>
-
-                <div class="destination-card">
-                    <div>
-                        <h3 id="destinationName">
-                            Minto Sports Complex
-                        </h3>
-                        <p id="destinationInfo">
-                            Example route · Map preview
-                        </p>
-                    </div>
-                    <span>›</span>
-                </div>
-
-                <div id="searchResults"
-                     class="search-results"
-                     aria-live="polite"></div>
-            </aside>
-
-            <!-- Homepage feature cards -->
-            <section class="feature-cards" id="features">
-
-                <article class="feature-card card">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/>
-                        <path d="M9 4v13.5M15 6.5V20"/>
-                    </svg>
-
-                    <h2>Interactive Map</h2>
-                    <p>
-                        Find buildings, services and
-                        study spaces in seconds.
-                    </p>
-                </article>
-
-                <article class="feature-card card">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M21 3 3 10.5l7.5 3L13.5 21z"/>
-                    </svg>
-
-                    <h2>Easy Navigation</h2>
-                    <p>
-                        Preview how walking directions can help
-                        you find your way around campus.
-                    </p>
-                </article>
-
-                <article class="feature-card card">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M12 20s-8-4.9-8-10.5A4.5 4.5 0 0 1 12 6.6a4.5 4.5 0 0 1 8 2.9C20 15.1 12 20 12 20z"/>
-                    </svg>
-
-                    <h2>Everything in One Place</h2>
-                    <p>
-                        Access important locations,
-                        services and resources.
-                    </p>
-                </article>
-
-            </section>
-        </div>
-
-        <!-- Bottom homepage banner -->
-        <section class="cta card">
-            <div>
-                <h2>
-                    Get <em class="accent">unlost.</em><br>
-                    Explore with confidence.
-                </h2>
-
-                <p>
-                    Whether you're a new student or just exploring,
-                    uOVirt makes it easy to find your way around uOttawa.
-                </p>
-            </div>
-
-            <a href="../features/features.html" class="btn-outline">
-                Learn more <span>→</span>
-            </a>
-        </section>
-
-        <!-- Questions -->
-        <section class="extra-section" id="questions">
-            <h2>Questions?</h2>
-
-            <details>
-                <summary>What is uOVirt?</summary>
-                <p>
-                    uOVirt is a student project designed to help
-                    people explore the University of Ottawa campus.
-                </p>
-            </details>
-
-            <details>
-                <summary>Who can use uOVirt?</summary>
-                <p>
-                    The website is designed for students,
-                    visitors and anyone exploring campus.
-                </p>
-            </details>
-
-            <p class="extra-more">
-                Still have a question?
-                <a href="../questions/questions.html">Send us a message →</a>
-            </p>
-        </section>
-
-    </main>
-
-    <footer class="site-footer" id="contact">
-        uOVirt · SEG 2900 Student Project · University of Ottawa · 2026
-    </footer>
+    <footer>uOVirt · SEG 2900 Student Project · University of Ottawa · 2026</footer>
 
 </body>
 </html>
