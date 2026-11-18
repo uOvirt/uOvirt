@@ -1,185 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
-.pricing-page {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #F4F1EA;
-    color: #1A1A1A;
+body {
     margin: 0;
+    background: #f4f1ea;
+    color: #1a1a1a;
+    font-family: "DM Sans", Arial, sans-serif;
 }
 
-.pricing-page header {
-    background-color: #FFFFFF;
-    padding: 25px 50px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    background: white;
 }
 
-.pricing-page header strong {
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 28px;
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
 
-.pricing-page .logo-black {
-    color: #1A1A1A;
+.logo span, h1 em {
+    color: #c8321e;
 }
 
-.pricing-page .logo-red {
-    color: #C8321E;
-}
-
-.pricing-page a {
-    color: #1A1A1A;
+a {
+    color: inherit;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.pricing-page a:hover {
-    color: #C8321E;
+nav a {
+    margin-left: 25px;
 }
 
-.pricing-page main {
-    padding: 50px;
-    max-width: 1200px;
+nav a:hover, nav a.active {
+    color: #c8321e;
+}
+
+main {
+    max-width: 1000px;
     margin: auto;
+    padding: 40px 20px;
 }
 
-.pricing-page .label {
-    color: #C8321E;
-    font-weight: bold;
+.next {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #c8321e;
+    border-radius: 25px;
+    color: white;
 }
 
-.pricing-page h1,
-.pricing-page h2,
-.pricing-page h3 {
-    font-family: 'Inter Tight', sans-serif;
+footer {
+    padding: 20px;
+    color: #777;
+    text-align: center;
 }
 
-.pricing-page h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.pricing-page h1 em {
-    font-family: 'Fraunces', serif;
-    font-weight: normal;
-    color: #C8321E;
-}
-
-.pricing-page p {
-    color: #777777;
-}
-
-.pricing-page .plans {
+.grid {
     display: flex;
-    gap: 25px;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.pricing-page .plan {
-    background-color: #FFFFFF;
-    padding: 30px;
-    border: 1px solid #dddddd;
-    border-radius: 18px;
+.plan {
     flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.pricing-page .student {
-    border: 2px solid #C8321E;
-}
-
-.pricing-page .plan h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.pricing-page .plan h3 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.pricing-page .popular {
-    color: #C8321E;
-    font-weight: bold;
-}
-
-.pricing-page ul {
-    list-style: none;
-    padding: 0;
-}
-
-.pricing-page li {
-    margin-bottom: 15px;
-}
-
-.pricing-page li::before {
-    content: "✓ ";
-    color: #C8321E;
-    font-weight: bold;
-}
-
-.pricing-page button {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #C8321E;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 30px;
-    padding: 14px 25px;
-    font-size: 16px;
-    font-weight: bold;
+    min-width: 220px;
+    padding: 25px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 15px;
     cursor: pointer;
 }
 
-.pricing-page button:hover {
-    background-color: #A82815;
+.plan.popular, .plan.selected {
+    border-color: #c8321e;
 }
 
-.pricing-page .plan button {
-    margin-top: auto;
-    width: 100%;
+.tag, #message {
+    color: #c8321e;
 }
 
-.pricing-page .plan.selected {
-    border: 2px solid #C8321E;
-    background-color: #FFF8F5;
+.price small {
+    font-size: 16px;
 }
 
-.pricing-page .plan.selected button {
-    background-color: #A82815;
-}
-
-.pricing-page .bottom {
-    background-color: #FFFFFF;
-    padding: 30px;
-    margin-top: 30px;
-    border-radius: 18px;
-}
-
-.pricing-page #message {
-    color: #C8321E;
+.price {
+    font-size: 40px;
     font-weight: bold;
-}
-
-.pricing-page #message:empty {
-    display: none;
-}
-
-@media (max-width: 750px) {
-    .pricing-page .plans {
-        flex-direction: column;
-    }
-
-    .pricing-page main {
-        padding: 20px;
-    }
-
-    .pricing-page h1 {
-        font-size: 36px;
-    }
-
-    .pricing-page header {
-        padding: 20px;
-    }
 }
