@@ -1,4 +1,4 @@
-cards = document.querySelectorAll(".grid .card");
+var cards = document.querySelectorAll(".grid .card");
 
 cards.forEach(function(card) {
     card.addEventListener("click", function() {
@@ -7,4 +7,4 @@ cards.forEach(function(card) {
         });
         card.classList.add("selected");
     });
-
+});
