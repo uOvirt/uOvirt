@@ -1,4 +1,4 @@
-uOVirt
+uOvirt
 ======
 
 **Live website:** https://uovirt.github.io/uOvirt/
