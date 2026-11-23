@@ -25,3 +25,10 @@
   width: 22px;
   margin-right: 8px;
 }
+
+@media (max-width: 700px) {
+  .member {
+    flex-direction: column;
+    text-align: center;
+  }
+}
